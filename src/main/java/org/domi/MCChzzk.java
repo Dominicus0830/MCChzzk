@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class MCChzzk extends JavaPlugin {
     private static MCChzzk plugin;
-    public Chzzk chzzk = new ChzzkBuilder("value of NID_AUT cookie", "value of NID_SES cookie").build();
+    public Chzzk chzzk = new ChzzkBuilder().build();
     public ChzzkChat chat = chzzk.chat();
 
     public static MCChzzk getInstance() {
@@ -34,12 +34,6 @@ public class MCChzzk extends JavaPlugin {
         }
         getLogger().info("채널 " +'"'+ channel.getChannelName() +'"'+ " 로 연결중...");
         chat.addListener(new ChatToScoreboard(this));
-        try {
-            ChzzkChannelRules rules = chzzk.getChannelChatRules(CHANNEL_ID);
-            System.out.println(rules);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
         try {
             chat.connectFromChannelId(CHANNEL_ID);
         } catch (IOException e) {

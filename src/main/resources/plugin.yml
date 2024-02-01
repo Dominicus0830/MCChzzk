@@ -10,4 +10,4 @@ commands:
     aliases: ["chat", "채팅"]
     description: 스코어보드를 끕니다
 libraries:
-  - io.github.R2turnTrue:chzzk4j:0.0.1
+  - io.github.R2turnTrue:chzzk4j:0.0.2
