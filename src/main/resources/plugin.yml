@@ -1,0 +1,13 @@
+name: MCChzzk
+version: 0.0.1
+main: org.domi.MCChzzk
+author: Dominicus0830
+website: "https://github.com/Dominicus0830?tab=repositories"
+api-version: 1.20
+description: 팔닥팔닥
+commands:
+  채팅:
+    aliases: ["chat", "채팅"]
+    description: 스코어보드를 끕니다
+libraries:
+  - io.github.R2turnTrue:chzzk4j:0.0.1
